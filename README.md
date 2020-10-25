@@ -13,8 +13,14 @@ PLEASE edit ```settings.py``` before run program and read carefully all comments
 
 TO RUN THIS PROGRAM AFTER YOU EDIT ```settings.py``` just click on ```JALANKAN_PROGRAM_DISINI.py```
 
+
 created by Hafid Abi D.
+
 visit or contact me on
-github = https://github.com/hafidabid
+
+github = https://github.com/hafidabid 
+
 linkedin = https://www.linkedin.com/in/hafidabi/
-instagram = https://www.instagram.com/hafidabiiiii/
+
+instagram = https://www.instagram.com/hafidabiiiii/ 
+
