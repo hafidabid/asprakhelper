@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "asistenpengkom",
+  "private_key_id": "1dfb14ae8f40dfaa0b8a324d08e377340ae115c1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDOz3ACvrs3lzRK\nPIG+MppcdMD9ODETl7izbxoyE6NgR+FqDOs7eitmsYAt7t3rLaDa7R2x51MSp4ad\ngMJI+KOYjta/cEoMHi570j1qZvgjAzI6WmNHh8AdmiwRkVBnJHywTtjz6s0RqW+i\n1dnlAgREJLGLpRgxHZH+/X4r7PpG6t3LEwghkB21bGgTML+MVQvCy1ZJ+IjL1X44\nKWutSBlopAaDR2IR3lrIejTov4SXAq/goveuF20kenjKwrVEp8CWNaGDUxvxf+wg\nDLToSIFHDpMxvtEJTRsy0a+qkmK9ynK0n8InA+Aqf+RAs9x8dwhgBopLezdW0NZB\nzjHD3iuxAgMBAAECggEAWwsBAYRbwN5Eu8WlTEjUoY0YhKEfIcPyILPxcUgp7THX\nrysex2FCCARuLEpy0ZyVqqsmHnJ6pMSxQ1cysJMc2gVPzpktT+Zdik8EkHniFO/M\nRdoSyKOfVKjRa65wGef7KFadtcuRGYxgw+um7+USYblRm+tDGiQtaHbJ+6Zoi50A\nudmppaFwlm4I+XMMV5YjCXUquWA9VChr+qXdDcdoGcYWVs2ocfao+2TAI1UMCFZA\nauMOVjgR2+Bi/xbia1ZZqA+Sw4XWP3ArX0n+WcK+wsnDYMI5s+7VJRz3kc2vuK77\n3PaOz6I7X+tBC8EA4og16JrPiQbyFE0r4UnmTNrFLQKBgQDzlLIMSEjrerFBVj9J\nGykF5va3EiwvpQ4OSOh7faxHA7o4mM/whTm2Ap4Qbe8yTFlHRjXabbuxUPKV/31j\nxTrMujt2CQcQZuiHH+iNgm0qieKaf/76Ue7pSa4fm1xgXA+Cem40a6L7h7JVpBXk\nKFyX+0xNn2tCSqAIMpqr565OFwKBgQDZWsy+fPX4HsHdXs63l5jxyEWzON9JRhqD\n/MKRsJgNRCAQFYl4vXHWGTC3hniyEv0qKVVZk+MFtrVjgQw3BvBUMRPr3XVVgXdP\nkVj2HAyCY+colAcanwz6ZEek1WQeWMMWhkAtuzot6w048PKCC1nsNh6C8vj0/gAN\n2DUPxOl5dwKBgQDtDtwxg/Aj7SaxteSlm59TNTMLfM4wGG0TjfVkqiyOeJw2FNLa\n/G3sK6P1zWgsBY4mBbjHumAe8+8D+MDp5ruRH/Zaq/KKDf1j9LP5dOQVsFgvkT5w\nFGl19dVWwXcn+LDHhavXrKHUNn5jRuxfPsDO0S2zpeFXhRU2pTlO8I39RQKBgHpL\nFmwPTy3d0GJHl7PAvjM75cujMi6+HOkqbCcg30yHiirCk2i13rkBz2FTbdFz0bHJ\nM9aE2PU8Ce8EiuTjKJGWU4kgP4Zuo7zHIPDIc1lh8IvqTdzypJC1n4Hk9sIEWy/v\nNWkFsQRo/jWNjEUTMfMvuBchsmXWDB2+Cozm1B6dAoGBAJJ89A6SBj9GAUoZexST\nXpv+NOIHrGK+uak2G6ocxRaTQ8FoZBcPPqt02g4+DsR7yA7ownC6Q6iAOdGHaae7\nznJhJNDddrkOExs5lgr/GqwvRk74Db7ilTi0B6S2/z3STTtfoJ/rElalzZ5klAhg\nPQIl4om0V5SlyQzStzMs5Mvc\n-----END PRIVATE KEY-----\n",
+  "client_email": "asprakpengkom@asistenpengkom.iam.gserviceaccount.com",
+  "client_id": "111219622674323041067",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/asprakpengkom%40asistenpengkom.iam.gserviceaccount.com"
+}
