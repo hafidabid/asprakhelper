@@ -27,16 +27,17 @@ def downloadFile(gUrl,filename,foldername=""):
     except Exception as e:
         print(e)
 
-def unzipfile(filename,foldername=""):
+def unzipfile(filename,isLate=False,foldername=""):
     try:
+        f = filename[:len(filename) - 4:]
+        if isLate:
+            f= f+" TERLAMBAT"
         if(foldername==""):
             with ZipFile(filename, 'r') as toUnzip:
-                f = filename[:len(filename)-4:]
                 toUnzip.extractall(f)
         else:
             makeNewFolder(foldername)
             with ZipFile(foldername + "/" + filename, 'r') as toUnzip:
-                f = filename[:len(filename) - 4:]
                 toUnzip.extractall(foldername + "/" +f)
     except Exception as e:
         print(e)

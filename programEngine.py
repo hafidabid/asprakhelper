@@ -12,16 +12,18 @@ def runthisprogram():
     dframe_praktikum = get_data_google_sheets(SHEET_CODE_PRAKTIKUM, getSheet(PRAKTIKUM_KE,False))
     DeadlineTime = datetime.strptime(DEADLINE_TP, '%m/%d/%Y %H:%M:%S')
     DeadlineTimePrak = datetime.strptime(DEADLINE_PRAK, '%m/%d/%Y %H:%M:%S')
-
     FOLDER_PRAKTIKUM = "PRAKTIKUM_0"+str(PRAKTIKUM_KE)+"_"+SESI+KELAS
     FOLDER_PRA = "TP_0"+str(PRAKTIKUM_KE)+"_"+SESI+KELAS
 
     listnim = []
     for x in range(int(RANGE_NIM_BAWAH), int(RANGE_NIM_ATAS)+1): listnim.append(str(x))
+    for x in ADDITIONAL_NIM: listnim.append(str(x))
     data_praprak = dframe_pra.to_records(index=False)
     data_praktikum = dframe_praktikum.to_records(index=False)
     pra_files = dict()
     praktikum_files = dict()
+    pra_late = dict()
+    praktikum_late = dict()
     for x in listnim:
         waktu = ""
         for y in data_praprak:
@@ -40,6 +42,13 @@ def runthisprogram():
             elif waktu == "":
                 pra_files[x] = "NaN"
 
+            if waktu!="":
+                time0 = datetime.strptime(waktu, '%m/%d/%Y %H:%M:%S')
+                if time0 > DeadlineTime:
+                    pra_late[x]=True
+                else: pra_late[x]=False
+            else:
+                pra_late[x] = False
         waktu = ""
         for y in data_praktikum:
             if y[3] == x and waktu == "":
@@ -57,13 +66,20 @@ def runthisprogram():
             elif waktu == "":
                 praktikum_files[x] = "NaN"
 
+            if waktu!="":
+                time0 = datetime.strptime(waktu, '%m/%d/%Y %H:%M:%S')
+                if time0 > DeadlineTimePrak:
+                    praktikum_late[x]=True
+                else: praktikum_late[x]=False
+            else: praktikum_late[x]=False
+
     if(DOWNLOAD_TP):
         makeNewFolder(FOLDER_PRA)
         for x in listnim:
             if (pra_files[x] != "Nan"):
                 flname = "H0" + str(PRAKTIKUM_KE) + "_" + str(x) + ".zip"
                 downloadFile(pra_files[x], flname, FOLDER_PRA)
-                unzipfile(flname,FOLDER_PRA)
+                unzipfile(flname,pra_late[x],FOLDER_PRA)
 
     if(DOWNLOAD_PRAK):
         makeNewFolder(FOLDER_PRAKTIKUM)
@@ -71,4 +87,4 @@ def runthisprogram():
             if(praktikum_files[x]!="NaN"):
                 flname = "P0" + str(PRAKTIKUM_KE) + "_" + str(x) + ".zip"
                 downloadFile(praktikum_files[x],flname,FOLDER_PRAKTIKUM)
-                unzipfile(flname,FOLDER_PRAKTIKUM)
+                unzipfile(flname,praktikum_late[x],FOLDER_PRAKTIKUM)

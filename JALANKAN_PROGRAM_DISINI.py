@@ -18,7 +18,7 @@ print("JANGAN LUPA BACA README, DAN EDIT settings.py !!!!!!")
 programEngine.runthisprogram()
 print("\n"
       "Thank you for using this program\n"
-      "made by al hafid\n"
+      "made by hafidabi\n"
       "any complaint or inquiries please contact me via\n"
       "github = https://github.com/hafidabid\n"
       "linkedin = https://www.linkedin.com/in/hafidabi/\n"
@@ -26,4 +26,3 @@ print("\n"
       "\n")
 
 time.sleep(4)
-r = input("input 0 and give enter to exit ")
