@@ -4,7 +4,7 @@ membantu meringankan download file bagi asprak pengkom ITB
 features:
 1. download all files from praktikan pengkom according to own session gspreadsheet
 2. only download last submission if praktikan submit twice or more
-3. check if submission exceed deadline or not. and only download valid submission before dealine
+3. check if submission exceed deadline or not. and give mark "TERLAMBAT" on folder name after zippin while praktikan submit late
 4. unzip zip after downloading
 
 How to Use:
